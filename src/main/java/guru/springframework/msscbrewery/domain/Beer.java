@@ -1,6 +1,7 @@
 package guru.springframework.msscbrewery.domain;
 
 import guru.springframework.msscbrewery.web.model.v2.BeerStyleEnum;
+import java.sql.Timestamp;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,4 +18,7 @@ public class Beer {
     private String beerName;
     private BeerStyleEnum beerStyle;
     private Long upc;
+    
+    private Timestamp createdDate;
+    private Timestamp lastUpdatedDate;
 }
